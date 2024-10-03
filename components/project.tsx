@@ -1,11 +1,16 @@
 "use client";
 
 import { useRef } from "react";
-import { projectsData } from "@/lib/data";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsData)[number];
+// Update ProjectProps to accept both mutable and readonly arrays
+type ProjectProps = {
+  title: string;
+  description: string;
+  tags: string[] | readonly string[];
+  imageUrl?: string | StaticImageData;
+};
 
 export default function Project({
   title,
@@ -21,7 +26,6 @@ export default function Project({
   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
-  // Ensure tags is an array, if not, make it an empty array
   const safeTags = Array.isArray(tags) ? tags : [];
 
   return (
