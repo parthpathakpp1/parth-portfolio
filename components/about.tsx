@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { ReactNode } from "react";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import {
@@ -11,8 +11,14 @@ import {
   FaAws,
   FaDocker,
 } from "react-icons/fa";
+import { IconType } from "react-icons";
 
-const HighlightedText = ({ children, icon: Icon }) => (
+interface HighlightedTextProps {
+  children: ReactNode;
+  icon?: IconType;
+}
+
+const HighlightedText = ({ children, icon: Icon }: HighlightedTextProps) => (
   <motion.span
     className="inline-flex items-center bg-blue-100 text-blue-800 px-2 py-1 rounded-full text-sm font-medium mr-2 mb-2"
     whileHover={{ scale: 1.05, backgroundColor: "#93C5FD" }}
