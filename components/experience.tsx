@@ -9,7 +9,6 @@ import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
-import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 
 const ExperienceCard = ({ item, theme }) => (
   <VerticalTimelineElement
