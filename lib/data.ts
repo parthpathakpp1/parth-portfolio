@@ -2,8 +2,9 @@ import React from "react";
 import { LuGraduationCap } from "react-icons/lu";
 import schImage from "@/public/schss1.png";
 import appleImage from "@/public/app1.png";
-import chatImage from "@/public/CHATAPP.png";
 import saasImage from "@/public/ss1.png";
+import zcrumImage from "@/public/zcrumshots.png"
+import aishotsImage from "@/public/aisaas.png"
 
 export const links = [
   {
@@ -41,32 +42,38 @@ export const experiencesData = [
 export const projectsData = [
   {
     title: "Schedulee",
-    description:
-      "This is a 1:1 meeting booking site just like Calendly . It has all the features that are required.",
-    tags: ["React", "Next.js", "Tailwind", "NeonDB"], // This is correct
+    description: "This is a 1:1 meeting booking site just like Calendly . It has all the features that are required.",
+    tags: ["React", "Next.js", "Tailwind", "NeonDB"],
     imageUrl: schImage,
+    liveLink: "https://schedulee.vercel.app/", // Add live link
   },
   {
-    title: "Apple Doors",
-    description:
-      "Apple Doors is a Full Stack Website for buying doors and it has an unique functionality that user can customize the door and view them in 3D.",
-    tags: ["React", "Node.JS", "Tailwind", "MongoDB"], // This is correct
-    imageUrl: appleImage,
+    title: "Zcrum",
+    description: "A web-based project management tool that helps teams organize work through organizations, projects, and sprints - similar to Jira but simplified.",
+    tags: ["Next.js", "Prisma", "PostgresSQL", "Tailwindcss"],
+    imageUrl: zcrumImage,
+    liveLink: "https://zcrum.vercel.app/", // Add live link
   },
   {
-    title: "Chat Application",
-    description:
-      "A chatting application where you can chat with your friends, family members.",
-    tags: ["React", "Node.js", "MongoDB"], // This is correct
-    imageUrl: chatImage,
+    title: "AI Saas Landing Page",
+    description: "AI-powered project management made simple. Create, track, and deliver projects smarter",
+    tags: ["Next.js", "Framer Motion", "Typescript"],
+    imageUrl: aishotsImage,
+    liveLink: "ai-saas-landing-page-six.vercel.app", // Add live link
   },
   {
     title: "SaaS Application",
-    description:
-      "It is a beautiful frontend application made for a SaaS business.",
-    // FIX THIS: Separate "Next.js" and "Framer Motion" into two array elements
-    tags: ["Next.js", "Framer Motion"], // Corrected
+    description: "It is a beautiful frontend application made for a SaaS business.",
+    tags: ["Next.js", "Framer Motion"],
     imageUrl: saasImage,
+    liveLink: "nextjs-saas-ten.vercel.app", // Add live link
+  },
+  {
+    title: "Apple Doors",
+    description: "Apple Doors is a Full Stack Website for buying doors and it has an unique functionality that user can customize the door and view them in 3D.",
+    tags: ["React", "Node.JS", "Tailwind", "MongoDB"],
+    imageUrl: appleImage,
+    liveLink: "https://appledoors-1.onrender.com/", // Add live link
   },
 ] as const;
 
