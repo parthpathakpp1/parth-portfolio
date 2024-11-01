@@ -52,21 +52,21 @@ export const projectsData = [
     description: "A web-based project management tool that helps teams organize work through organizations, projects, and sprints - similar to Jira but simplified.",
     tags: ["Next.js", "Prisma", "PostgresSQL", "Tailwindcss"],
     imageUrl: zcrumImage,
-    liveLink: "https://zcrum.vercel.app/", // Add live link
+    liveLink: "https://zcrum-khaki.vercel.app/", // Add live link
   },
   {
     title: "AI Saas Landing Page",
     description: "AI-powered project management made simple. Create, track, and deliver projects smarter",
     tags: ["Next.js", "Framer Motion", "Typescript"],
     imageUrl: aishotsImage,
-    liveLink: "ai-saas-landing-page-six.vercel.app", // Add live link
+    liveLink: "https://ai-saas-landing-page-six.vercel.app", // Add live link
   },
   {
     title: "SaaS Application",
     description: "It is a beautiful frontend application made for a SaaS business.",
     tags: ["Next.js", "Framer Motion"],
     imageUrl: saasImage,
-    liveLink: "nextjs-saas-ten.vercel.app", // Add live link
+    liveLink: "https://nextjs-saas-ten.vercel.app", // Add live link
   },
   {
     title: "Apple Doors",
